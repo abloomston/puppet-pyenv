@@ -38,7 +38,7 @@ Puppet::Type.newtype(:pip) do
   end
 
   newparam(:name) do
-    desc 'Package qualified name withing an pyenv repository'
+    desc 'Package qualified name within an pyenv repository'
     isrequired
     validate do |value|
       raise ArgumentError, 'Empty values are not allowed' if value == ''
